@@ -1,0 +1,24 @@
+.rect {
+  all: unset;
+  position: absolute;
+  background-color: #df23;
+  border: solid 2px black;
+  box-shadow: 0 0 16px 2px #000a;
+  box-sizing: border-box;
+  transition: border 250ms, background-color 500ms;
+  animation: 100ms ease-in fade-in;
+}
+
+.rect:focus {
+  border-color: #fff;
+  background-color: #f02;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
